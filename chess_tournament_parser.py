@@ -184,10 +184,10 @@ def main():
     
     # Parse all rounds
     filenames = [
-        '/home/geckods/Coding/chessswissprediction/Chess Data - Round 1.csv',
-        '/home/geckods/Coding/chessswissprediction/Chess Data - Round 2.csv',
-        '/home/geckods/Coding/chessswissprediction/Chess Data - Round 3.csv',
-        '/home/geckods/Coding/chessswissprediction/Chess Data - Round 4.csv'
+        '/home/geckods/Coding/chessswissprediction/data/Chess Data - Round 1.csv',
+        '/home/geckods/Coding/chessswissprediction/data/Chess Data - Round 2.csv',
+        '/home/geckods/Coding/chessswissprediction/data/Chess Data - Round 3.csv',
+        '/home/geckods/Coding/chessswissprediction/data/Chess Data - Round 4.csv'
     ]
     
     parser.parse_multiple_rounds(filenames)

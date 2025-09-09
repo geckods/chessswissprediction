@@ -252,12 +252,12 @@ def main():
     
     # Default CSV files
     csv_files = [
-        'Chess Data - Round 1.csv',
-        'Chess Data - Round 2.csv',
-        'Chess Data - Round 3.csv',
-        'Chess Data - Round 4.csv',
-        'Chess Data - Round 5.csv',
-        'Chess Data - Round 6.csv'
+        'data/Chess Data - Round 1.csv',
+        'data/Chess Data - Round 2.csv',
+        'data/Chess Data - Round 3.csv',
+        'data/Chess Data - Round 4.csv',
+        'data/Chess Data - Round 5.csv',
+        'data/Chess Data - Round 6.csv'
     ]
     
     # Initialize predictor
