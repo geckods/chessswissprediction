@@ -1,0 +1,59 @@
+Bo.,SNo.,Title,NAME,Rtg,Pts,Res,Pts,Title,NAME,Rtg,SNo.
+1,21,GM,"Maghsoodloo, Parham",2692,3,½ - ½,2.5,GM,"Abdusattorov, Nodirbek",2748,6
+2,1,GM,"Praggnanandhaa, R",2785,2.5,½ - ½,2.5,GM,"Mishra, Abhimanyu",2611,86
+3,3,GM,"Gukesh, D",2767,2.5,½ - ½,2.5,GM,"Erigaisi, Arjun",2771,2
+4,4,GM,"Firouzja, Alireza",2754,2,½ - ½,2.5,GM,"Gumularz, Szymon",2590,101
+5,5,GM,"Keymer, Vincent",2751,2,1 - 0,2,GM,"Svane, Frederik",2643,56
+6,68,GM,"Cheparinov, Ivan",2627,2,½ - ½,2,GM,"Giri, Anish",2746,7
+7,58,GM,"Salem, A.R. Saleh",2640,2,½ - ½,2,GM,"Aronian, Levon",2744,8
+8,9,GM,"Nepomniachtchi, Ian",2742,2,½ - ½,2,GM,"Hovhannisyan, Robert",2629,65
+9,76,GM,"Demchenko, Anton",2620,2,½ - ½,2,GM,"Mamedyarov, Shakhriyar",2741,10
+10,11,GM,"Vachier-Lagrave, Maxime",2738,2,0 - 1,2,GM,"Maurizzi, Marcandria",2610,87
+11,83,GM,"Mendonca, Leon Luke",2615,2,½ - ½,2,GM,"Niemann, Hans Moke",2733,12
+12,91,GM,"Ivanchuk, Vasyl",2608,2,½ - ½,2,GM,"Vidit, Santosh Gujrathi",2712,16
+13,90,GM,"Predke, Alexandr",2609,2,0 - 1,2,GM,"Rapport, Richard",2711,17
+14,96,GM,"Pranav, V",2596,2,½ - ½,2,GM,"Nihal, Sarin",2693,20
+15,25,GM,"Esipenko, Andrey",2687,2,½ - ½,2,GM,"Suleymanli, Aydin",2602,93
+16,94,GM,"Kuzubov, Yuriy",2600,2,0 - 1,2,GM,"Yakubboev, Nodirbek",2681,28
+17,97,GM,"Henriquez Villagra, Cristobal",2594,2,0 - 1,2,GM,"Bluebaum, Matthias",2671,32
+18,98,GM,"Moussard, Jules",2591,2,0 - 1,2,GM,"Vitiugov, Nikita",2666,36
+19,104,GM,"Aditya, Mittal",2589,2,0 - 1,2,GM,"Erdogmus, Yagiz Kaan",2646,52
+20,108,GM,"Woodward, Andy",2557,2,½ - ½,2,GM,"Rodshtein, Maxim",2645,54
+21,15,GM,"Yu, Yangyi",2714,1.5,½ - ½,1.5,GM,"Puranik, Abhimanyu",2640,57
+22,18,GM,"Harikrishna, Pentala",2704,1.5,½ - ½,1.5,GM,"Xiong, Jeffery",2640,59
+23,19,GM,"Liang, Awonder",2698,1.5,1 - 0,1.5,GM,"Aryan, Chopra",2619,79
+24,60,GM,"Chigaev, Maksim",2638,1.5,0 - 1,1.5,GM,"Sevian, Samuel",2692,22
+25,23,GM,"Van Foreest, Jorden",2692,1.5,1 - 0,1.5,GM,"Anton Guijarro, David",2625,71
+26,67,GM,"Volokitin, Andrei",2628,1.5,½ - ½,1.5,GM,"Dubov, Daniil",2691,24
+27,27,GM,"Eljanov, Pavel",2682,1.5,½ - ½,1.5,GM,"Ponomariov, Ruslan",2622,75
+28,29,GM,"Deac, Bogdan-Daniel",2674,1.5,½ - ½,1.5,GM,"Matlakov, Maxim",2609,89
+29,31,GM,"Tabatabaei, M. Amin",2673,1.5,1 - 0,1.5,GM,"Santos Latasa, Jaime",2620,77
+30,33,GM,"Murzin, Volodar",2670,1.5,½ - ½,1.5,GM,"Narayanan, S L",2591,99
+31,70,GM,"Sargissian, Gabriel",2626,1.5,0 - 1,1.5,GM,"Shankland, Sam",2670,34
+32,39,GM,"Oparin, Grigoriy",2660,1.5,1 - 0,1.5,GM,"Najer, Evgeniy",2613,85
+33,43,GM,"Sargsyan, Shant",2653,1.5,1 - 0,1.5,GM,"Madaminov, Mukhiddin",2560,107
+34,82,GM,"Shirov, Alexei",2616,1.5,½ - ½,1.5,GM,"Gelfand, Boris",2652,44
+35,88,GM,"Lagarde, Maxime",2609,1.5,½ - ½,1.5,GM,"Mamedov, Rauf",2651,46
+36,106,GM,"Bartel, Mateusz",2581,1.5,½ - ½,1.5,GM,"Yuffa, Daniil",2648,49
+37,53,GM,"Theodorou, Nikolas",2646,1.5,1 - 0,1.5,GM,"Nigmatov, Ortik",2488,113
+38,55,GM,"Vokhidov, Shamsiddin",2645,1.5,½ - ½,1.5,GM,"Samunenkov, Ihor",2550,109
+39,13,GM,"Fedoseev, Vladimir",2731,1,1 - 0,1,GM,"Martirosyan, Haik M.",2628,66
+40,73,GM,"Dardha, Daniel",2624,1,½ - ½,1,GM,"Sindarov, Javokhir",2722,14
+41,74,GM,"Donchenko, Alexander",2624,1,½ - ½,1,GM,"Robson, Ray",2674,30
+42,37,GM,"Artemiev, Vladislav",2664,1,½ - ½,1,GM,"Hakobyan, Aram",2625,72
+43,78,GM,"Svane, Rasmus",2620,1,½ - ½,1,GM,"Wojtaszek, Radoslaw",2661,38
+44,80,GM,"Hammer, Jon Ludvig",2618,1,0 - 1,1,GM,"Sadhwani, Raunak",2658,40
+45,41,GM,"Grischuk, Alexander",2657,1,½ - ½,1,GM,"Daneshvar, Bardiya",2598,95
+46,102,GM,"Jobava, Baadur",2590,1,½ - ½,1,GM,"Saric, Ivan",2655,42
+47,45,GM,"Bjerre, Jonas Buhl",2651,1,1 - 0,1,GM,"Korobov, Anton",2616,81
+48,47,GM,"Indjic, Aleksandar",2650,1,1 - 0,1,GM,"Vakhidov, Jakhongir",2521,111
+49,100,GM,"Warmerdam, Max",2591,1,½ - ½,1,GM,"Grandelius, Nils",2648,48
+50,110,GM,"Goryachkina, Aleksandra",2528,1,1 - 0,1,GM,"Kollars, Dmitrij",2647,50
+51,51,GM,"Lu, Shanglei",2647,1,1 - 0,1,GM,"Muradli, Mahammad",2590,103
+52,61,GM,"Bacrot, Etienne",2637,1,½ - ½,1,GM,"Zemlyanskii, Ivan",2586,105
+53,114,IM,"Suyarov, Mukhammadzokhid",2482,1,½ - ½,1,GM,"Gurel, Ediz",2631,63
+54,92,GM,"Wagner, Dennis",2608,0.5,½ - ½,0.5,GM,"Sarana, Alexey",2686,26
+55,35,GM,"Karthikeyan, Murali",2669,0.5,½ - ½,0.5,GM,"Xu, Xiangyu",2615,84
+56,64,GM,"Ivic, Velimir",2630,0.5,1 - 0,0.5,GM,"Abdisalimov, Abdimalik",2488,112
+57,62,GM,"Amin, Bassem",2636,1,0 - 1,1,GM,"Divya, Deshmukh *)",2478,115
+58,116,,"Olisa, Tennyson Ewomazino",2287,0.5,0 - 1,0.5,GM,"Sjugirov, Sanan",2627,69
