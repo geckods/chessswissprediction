@@ -6,11 +6,12 @@ Pure MCTS-based prediction system for Swiss chess tournaments
 
 import json
 import argparse
+import os
 from typing import Dict, List
 from datetime import datetime
 import matplotlib.pyplot as plt
 
-from chess_tournament_parser import ChessTournamentParser
+from chess_tournament_parser import ChessTournamentParser, discover_csv_files
 from monte_carlo_tournament import MonteCarloTournamentSimulator
 from elo_predictor import EloPredictor
 
@@ -250,15 +251,15 @@ def main():
     
     args = parser.parse_args()
     
-    # Default CSV files
-    csv_files = [
-        'data/Chess Data - Round 1.csv',
-        'data/Chess Data - Round 2.csv',
-        'data/Chess Data - Round 3.csv',
-        'data/Chess Data - Round 4.csv',
-        'data/Chess Data - Round 5.csv',
-        'data/Chess Data - Round 6.csv'
-    ]
+    # Automatically discover CSV files
+    csv_files = discover_csv_files('data')
+    
+    if not csv_files:
+        print("❌ No CSV files found in data/ directory!")
+        print("   Expected format: 'Chess Data - Round X.csv'")
+        return
+    
+    print(f"📊 Found {len(csv_files)} round files: {[os.path.basename(f) for f in csv_files]}")
     
     # Initialize predictor
     predictor = ChessTournamentPredictor()

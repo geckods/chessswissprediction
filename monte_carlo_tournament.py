@@ -19,7 +19,7 @@ from swissdutch.dutch import DutchPairingEngine
 from swissdutch.constants import FideTitle, Colour, FloatStatus
 from swissdutch.player import Player
 
-from chess_tournament_parser import ChessTournamentParser
+from chess_tournament_parser import ChessTournamentParser, discover_csv_files
 from elo_predictor import EloPredictor
 
 class MonteCarloTournamentSimulator:
@@ -418,18 +418,20 @@ def main():
     num_simulations = 1000  # Adjust this number as needed
     simulator = MonteCarloTournamentSimulator(num_simulations)
     
-    # Load tournament data
-    filenames = [
-        'data/Chess Data - Round 1.csv',
-        'data/Chess Data - Round 2.csv',
-        'data/Chess Data - Round 3.csv',
-        'data/Chess Data - Round 4.csv'
-    ]
+    # Automatically discover CSV files
+    filenames = discover_csv_files('data')
+    
+    if not filenames:
+        print("❌ No CSV files found in data/ directory!")
+        print("   Expected format: 'Chess Data - Round X.csv'")
+        return None
+    
+    print(f"📊 Found {len(filenames)} round files: {[os.path.basename(f) for f in filenames]}")
     
     simulator.load_tournament_data(filenames)
     
-    # Show current standings after 4 rounds
-    print("\n=== Current Standings After Round 4 ===")
+    # Show current standings after loaded rounds
+    print(f"\n=== Current Standings After Round {len(filenames)} ===")
     sorted_players = sorted(simulator.base_players, key=lambda p: (p.score, p.rating), reverse=True)
     for i, player in enumerate(sorted_players[:10], 1):
         print(f"{i:2d}. {player.name:<25} | Rating: {player.rating:4d} | Score: {player.score:3.1f}")

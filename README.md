@@ -33,6 +33,8 @@ pip install swissdutch matplotlib pandas requests
 
 ### Basic Usage
 
+The system automatically discovers and loads all available round files from the `data/` directory in order (Round 1, Round 2, etc.), stopping at the first missing round.
+
 ```bash
 # Run with default settings (2000 simulations, draw multiplier 1.0)
 python chess_tournament_predictor.py
@@ -259,8 +261,9 @@ The `--draw-multiplier` parameter significantly affects tournament outcomes:
 
 ### File Requirements
 - CSV files must be in the `data/` directory
-- Files should be named consistently (e.g., "data/Chess Data - Round X.csv")
+- Files should be named consistently (e.g., "Chess Data - Round X.csv")
 - All rounds must have the same player set
+- **Automatic Discovery**: The system automatically finds and loads all available rounds in order, stopping at the first missing round
 
 ## License
 
