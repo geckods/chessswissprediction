@@ -1,7 +1,26 @@
 import csv
+import os
 from collections import defaultdict
 from swissdutch.player import Player
 from swissdutch.constants import FloatStatus, Colour
+
+def discover_csv_files(data_dir='data'):
+    """
+    Automatically discover CSV files in the data directory in round order.
+    Returns a list of CSV files, stopping at the first missing round.
+    """
+    csv_files = []
+    round_num = 1
+    
+    while True:
+        pattern = os.path.join(data_dir, f"Chess Data - Round {round_num}.csv")
+        if os.path.exists(pattern):
+            csv_files.append(pattern)
+            round_num += 1
+        else:
+            break
+    
+    return csv_files
 
 class ChessTournamentParser:
     def __init__(self):
@@ -182,13 +201,15 @@ def main():
     """Example usage"""
     parser = ChessTournamentParser()
     
-    # Parse all rounds
-    filenames = [
-        '/home/geckods/Coding/chessswissprediction/data/Chess Data - Round 1.csv',
-        '/home/geckods/Coding/chessswissprediction/data/Chess Data - Round 2.csv',
-        '/home/geckods/Coding/chessswissprediction/data/Chess Data - Round 3.csv',
-        '/home/geckods/Coding/chessswissprediction/data/Chess Data - Round 4.csv'
-    ]
+    # Automatically discover CSV files
+    filenames = discover_csv_files('data')
+    
+    if not filenames:
+        print("❌ No CSV files found in data/ directory!")
+        print("   Expected format: 'Chess Data - Round X.csv'")
+        return
+    
+    print(f"📊 Found {len(filenames)} round files: {[os.path.basename(f) for f in filenames]}")
     
     parser.parse_multiple_rounds(filenames)
     
