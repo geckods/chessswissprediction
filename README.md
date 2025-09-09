@@ -257,13 +257,15 @@ The `--draw-multiplier` parameter significantly affects tournament outcomes:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the GNU General Public License v3.0 (GPLv3) - see the [LICENSE](LICENSE) file for details.
 
 ### What this means:
 - ✅ **Free to use** - Personal, educational, or commercial
 - ✅ **Free to modify** - Change the code however you want
 - ✅ **Free to distribute** - Share with others
+- ✅ **Copyleft protection** - Derivative works must also be GPLv3
 - ✅ **Attribution required** - Include the license notice
+- ✅ **Source code access** - Users must have access to source code
 - ✅ **No warranty** - Use at your own risk
 
 ### Tournament Data:
