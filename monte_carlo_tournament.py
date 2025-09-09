@@ -420,10 +420,10 @@ def main():
     
     # Load tournament data
     filenames = [
-        'Chess Data - Round 1.csv',
-        'Chess Data - Round 2.csv',
-        'Chess Data - Round 3.csv',
-        'Chess Data - Round 4.csv'
+        'data/Chess Data - Round 1.csv',
+        'data/Chess Data - Round 2.csv',
+        'data/Chess Data - Round 3.csv',
+        'data/Chess Data - Round 4.csv'
     ]
     
     simulator.load_tournament_data(filenames)

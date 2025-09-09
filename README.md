@@ -78,10 +78,10 @@ predictor = ChessTournamentPredictor()
 
 # Load tournament data
 csv_files = [
-    'Chess Data - Round 1.csv',
-    'Chess Data - Round 2.csv', 
-    'Chess Data - Round 3.csv',
-    'Chess Data - Round 4.csv'
+    'data/Chess Data - Round 1.csv',
+    'data/Chess Data - Round 2.csv', 
+    'data/Chess Data - Round 3.csv',
+    'data/Chess Data - Round 4.csv'
 ]
 
 # Run complete analysis
@@ -251,13 +251,23 @@ The `--draw-multiplier` parameter significantly affects tournament outcomes:
 3. **Low simulation count**: Increase `--simulations` for better accuracy
 
 ### File Requirements
-- CSV files must be in the same directory
-- Files should be named consistently (e.g., "Chess Data - Round X.csv")
+- CSV files must be in the `data/` directory
+- Files should be named consistently (e.g., "data/Chess Data - Round X.csv")
 - All rounds must have the same player set
 
 ## License
 
-This project is for educational and research purposes. Please respect tournament data usage policies.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### What this means:
+- ✅ **Free to use** - Personal, educational, or commercial
+- ✅ **Free to modify** - Change the code however you want
+- ✅ **Free to distribute** - Share with others
+- ✅ **Attribution required** - Include the license notice
+- ✅ **No warranty** - Use at your own risk
+
+### Tournament Data:
+Please respect tournament data usage policies when using the included CSV files.
 
 ## Contributing
 
