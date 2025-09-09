@@ -2,6 +2,8 @@
 
 A pure Monte Carlo Tree Search (MCTS) system for predicting Swiss chess tournament outcomes based on Elo ratings and tournament history.
 
+*This project was vibe coded with [Cursor](https://cursor.sh/) - an AI-powered code editor that makes development faster and more intuitive.*
+
 ## Overview
 
 This system simulates chess tournaments by:
