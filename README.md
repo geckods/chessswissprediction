@@ -100,18 +100,25 @@ top_3_probability = analysis['top_3_probability']
 
 ## Input Data Format
 
-The system expects CSV files with the following structure:
-- **SNo**: Player serial number
+The system expects CSV files with Swiss tournament pairing format:
+- **Bo.**: Board number
+- **SNo.**: Player serial number (left side)
+- **Title**: FIDE title (GM, IM, FM, etc.)
 - **NAME**: Player name
 - **Rtg**: Elo rating
-- **Title**: FIDE title (GM, IM, FM, etc.)
-- **Round results**: Columns showing wins (1), losses (0), draws (0.5)
+- **Pts**: Current score before this round
+- **Res**: Game result (1-0, 0-1, ½-½)
+- **Pts**: Current score before this round (right side)
+- **Title**: FIDE title (right side)
+- **NAME**: Player name (right side)
+- **Rtg**: Elo rating (right side)
+- **SNo.**: Player serial number (right side)
 
 Example:
 ```csv
-SNo,NAME,Rtg,Title,Rd.1,Rd.2,Rd.3,Rd.4
-1,Player A,2700,GM,1,0.5,1,0
-2,Player B,2650,GM,0,1,0.5,1
+Bo.,SNo.,Title,NAME,Rtg,Pts,Res,Pts,Title,NAME,Rtg,SNo.
+1,59,GM,"Xiong, Jeffery",2640,0,½ - ½,0,GM,"Praggnanandhaa, R",2785,1
+2,2,GM,"Erigaisi, Arjun",2771,0,½ - ½,0,GM,"Chigaev, Maksim",2638,60
 ```
 
 ## Output
@@ -239,7 +246,8 @@ The `--draw-multiplier` parameter significantly affects tournament outcomes:
 
 ## Performance
 
-- **Simulation Speed**: ~100-200 simulations per second
+- **Simulation Speed**: ~30 simulations per second (for 6 rounds remaining)
+- **Speed varies by rounds**: More rounds = slower simulation
 - **Memory Usage**: Minimal (only stores final results)
 - **Accuracy**: Improves with more simulations (diminishing returns after 2000)
 
@@ -247,8 +255,7 @@ The `--draw-multiplier` parameter significantly affects tournament outcomes:
 
 ### Common Issues
 1. **CSV parsing errors**: Check file format and column names
-2. **Missing players**: Ensure all players appear in at least one round
-3. **Low simulation count**: Increase `--simulations` for better accuracy
+2. **Low simulation count**: Increase `--simulations` for better accuracy
 
 ### File Requirements
 - CSV files must be in the `data/` directory
